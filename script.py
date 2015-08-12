@@ -12,7 +12,7 @@ parser = argparse.ArgumentParser(description='Create and setup a C/C++ project')
 parser.add_argument('C/C++', choices=['C', 'C++'])
 parser.add_argument('project_name')
 parser.add_argument('-f', '--flags', required=False)
-parser.add_argument('-l', '--ldflags', required=False)
+parser.add_argument('-l', '--ldflags', required=False, default="")
 args = parser.parse_args()
 args = vars(args)
 
